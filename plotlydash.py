@@ -79,7 +79,8 @@ def update_graph(site_dropdown):
 
 @app.callback(
      Output(component_id='success-payload-scatter-chart',component_property='figure'),
-     [Input(component_id='site_dropdown',component_property='value'),Input(component_id="payload_slider", component_property="value")]
+     [Input(component_id='site_dropdown',component_property='value'),
+      Input(component_id="payload_slider", component_property="value")]
 )
 def update_scattergraph(site_dropdown,payload_slider):
     if site_dropdown == 'All Sites':
